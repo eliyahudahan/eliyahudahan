@@ -1,16 +1,16 @@
-## Hi there 👋
+## 🚢 Data Scientist & ML Engineer - Maritime Analytics
 
-<!--
-**eliyahudahan/eliyahudahan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Building real-time vessel intelligence systems using AIS data and machine learning.
 
-Here are some ideas to get you started:
+### 🔧 Tech Stack
+- **ML & Analytics:** Python, Scikit-learn, Pandas, NumPy
+- **Data Engineering:** PostgreSQL, ETL, FastAPI
+- **Infrastructure:** Docker, Git
+- **Domain:** AIS Data, Geospatial Analysis
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🎯 Current Project
+Maritime Intelligence Platform - Real-time vessel tracking with ML-powered predictions and fuel optimization algorithms.
+
+### 📫 Connect
+- LinkedIn: https://www.linkedin.com/in/eliyahu-dahan-684b22294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+- Email: framgangsrik747@gmail.com
