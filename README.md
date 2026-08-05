@@ -12,9 +12,9 @@ LightGBM + Swing Equation. MAE: **261 MW**.
 FastAPI, Docker, Streamlit.
 [Repository](https://github.com/eliyahudahan/enumkraft)
 
-### ⚓ Deviative – Maritime Anomaly Detection | In Development
+Deviative – Maritime Anomaly Detection | In Development
 VTS system for detecting ship encounters and anomalies.
-200,000+ AIS records. LSTM Autoencoder. 115,000 pairs in 0.1 seconds.
+200,000+ AIS records. LSTM Autoencoder. Weather Context.
 PostgreSQL, Docker.
 [Repository](https://github.com/eliyahudahan/deviative)
 
