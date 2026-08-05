@@ -1,4 +1,4 @@
-# Eliyahu Dahan – Data Analyst / Junior Data Scientist
+# Eliyahu Dahan – Junior Data Analyst / Junior Data Scientist
 
 Independent. Self-taught. Building ML systems from scratch.
 
