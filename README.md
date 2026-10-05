@@ -1,43 +1,57 @@
-# Eliyahu Dahan – Junior Data Analyst / Junior Data Scientist
+# Eliyahu Dahan
 
-Independent. Self-taught. Building ML systems from scratch.
+**Data Analyst | End-to-End Data Systems | GT-First Methodology**
+
+Independent. Self-taught. Building data systems from scratch.
+
+Before every project, I validate feasibility: API, labels, Ground Truth.
+When GT exists – full validation. When it doesn't – I document it and 
+build alternative validation.
 
 ---
 
 ## Projects
 
-### ⚡ EnumKraft 2.0 – Grid Stability Monitoring | Production
-Live monitoring of the German power grid. Detects Dunkelflaute events.
-LightGBM + Swing Equation. MAE: **261 MW**.
-FastAPI, Docker, Streamlit.
-[Repository](https://github.com/eliyahudahan/enumkraft)
+### ⚓ Deviative – Maritime Encounter Detection (AIS)
+**Status:** Completed.
 
-### ⚓ Deviative – Maritime Anomaly Detection | In Development
-VTS system for detecting ship encounters and anomalies.
-200,000+ AIS records. LSTM Autoencoder. Weather Context.
-PostgreSQL, Docker.
-[Repository](https://github.com/eliyahudahan/deviative)
+Detecting dangerous vessel encounters in San Pedro Bay using 
+physics-based DCPA/TCPA analysis.
 
-### 🏭 Anomalitor – Predictive Maintenance
-Bearing fault detection on NASA vibration data.
-Random Forest + FFT + SHAP.
-[Repository](https://github.com/eliyahudahan/anomalitor)
+- 14M pairs → 4,372 anomalies (1.03%) · 22× noise reduction
+- Train 1.45% | Test 0.91% — stable across Out-of-Time split
+- GT: Task Mismatch documented (4 datasets reviewed, none match)
+- Alternative validation: stability, sensitivity, 10 manual cases
+- Dashboard: [deviative-demo.streamlit.app](https://deviative-78pbkz3ortv2d6kqvpzfhw.streamlit.app/)
 
-### 🛤️ Metrodorf – Train Delay Prediction
-Extreme delay prediction for Rhine-Ruhr railway network.
-Ensemble (XGBoost), R²=0.509 – explains 51% of extreme delays.
-[Repository](https://github.com/eliyahudahan/metrodorf)
+**Repository:** [deviative](https://github.com/eliyahudahan/deviative)
+
+---
+
+### 🚆 Metrodorf – Train Delay Prediction (Infrabel, Belgium)
+**Status:** In progress (pipeline complete, model in development).
+
+- Pipeline: 45.6M records (24 months, Infrabel Open Data)
+- GT: DELAY_ARR (measured, verified — 187s = 3:07)
+- Target: 360s, anchored in official KPI P.II1 (6 min, 111 measuring points)
+- Model in development: LightGBM + persistence baseline (t-168)
+- Test set: January 2025, untouched until final evaluation
+
+**Repository:** [metrodorf](https://github.com/eliyahudahan/metrodorf)
 
 ---
 
 ## Tech
 
-Python, Pandas, NumPy, Scikit-learn, LightGBM, XGBoost,
-FastAPI, Docker, Streamlit, PostgreSQL, Git
+Python · Pandas · NumPy · Scikit-learn · LightGBM · XGBoost · 
+FastAPI · Docker · Streamlit · PostgreSQL · Git
+
+**Methodology:** GT validation · Target before modeling · 
+Time-series split · Sensitivity · Documented limitations
 
 ---
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/eliyahu-dahan-684b22294/)
-[GitHub](https://github.com/eliyahudahan)
+- [LinkedIn](https://www.linkedin.com/in/eliyahu-dahan-684b22294)
+- [GitHub](https://github.com/eliyahudahan)
