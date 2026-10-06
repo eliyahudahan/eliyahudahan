@@ -59,6 +59,17 @@ Detecting dangerous vessel encounters in San Pedro Bay using physics-based DCPA/
 
 ---
 
+## Tech decisions
+
+**Why Parquet, not PostgreSQL?**
+Single table, no complex JOINs, ~500MB. Parquet + Pandas + 
+Streamlit was sufficient. PostgreSQL would have added complexity 
+without value.
+
+**Contrast with Deviative:** there, JOINs between vessel pairs, 
+encounters, and movement states justified PostgreSQL.
+
+
 ## Tech
 
 **Python** · Pandas · NumPy · Scikit-learn · LightGBM · XGBoost · 
