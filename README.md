@@ -26,7 +26,7 @@ Predicting train delays on line IC 16-1 (Brussels ↔ Luxembourg corridor).
 **GT:** DELAY_ARR — measured by Infrabel in seconds, verified (187s = 3:07)
 **Target:** arrival ≥360 seconds late (6 min) — anchored in official KPI P.II1
 
-**Results (Test Set — January 2025, untouched until final evaluation):**
+**Results (Test Set — January 2025, untouched during training):**
 
 | Model | Precision | Recall | F1 |
 |---|---|---|---|
