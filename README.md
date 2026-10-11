@@ -1,6 +1,6 @@
 # Eliyahu Dahan
 
-**Data Analyst | End-to-End Data Systems | GT-First Methodology**
+Data Scientist | Time Series & Forecasting | GT-First Methodology
 
 Independent. Self-taught. Building data systems from scratch.
 
