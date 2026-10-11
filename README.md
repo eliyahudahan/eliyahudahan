@@ -77,8 +77,8 @@ Testing whether ML can improve Energinet's official day-ahead wind forecast.
 - **GT:** ProductionConsumptionSettlement (from 2020)
 - **Baseline:** ForecastDayAhead (Energinet's official forecast)
 - **Approach:** Residual learning — LSTM + physics-informed features
-- **Test set locked:** January 2026 · Forecast-origin locked
-- **Pipeline complete:** curtailment filter implemented
+- **Test set:** January 2026 — locked and untouched during training
+- **Leakage control:** Forecast-origin documented
 - **Status:** Day 3 of 12 — feature engineering next
 
 🔗 Repository: [energium](https://github.com/eliyahudahan/energium)
