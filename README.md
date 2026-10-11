@@ -77,7 +77,7 @@ Testing whether ML can improve Energinet's official day-ahead wind forecast.
 - **GT:** ProductionConsumptionSettlement (from 2020)
 - **Baseline:** ForecastDayAhead (Energinet's official forecast)
 - **Approach:** Residual learning — LSTM + physics-informed features
-- **Test set:** January 2026 — locked and untouched during training
+- **Test set:** January 2026 — locked, one-shot
 - **Leakage control:** Forecast-origin documented
 - **Status:** Day 3 of 12 — feature engineering next
 
@@ -87,23 +87,37 @@ Testing whether ML can improve Energinet's official day-ahead wind forecast.
 
 ## Tech decisions
 
-**Why Parquet, not PostgreSQL?**
-Single table, no complex JOINs, ~500MB. Parquet + Pandas + Streamlit was 
-sufficient. PostgreSQL would have added complexity without value.
+Each project uses the simplest tool that fits its data model.
 
-**Contrast with Deviative:** there, JOINs between vessel pairs, encounters, 
-and movement states justified PostgreSQL.
+**Metrodorf — Parquet, not PostgreSQL**  
+Single table (1.07M rows for IC 16-1), no complex JOINs. Parquet + Pandas + 
+Streamlit was sufficient.
+
+**Energium — Parquet (planned)**  
+Same reasoning. Single time-series table, no JOINs. Pipeline generates 
+`merged.parquet` and `features.parquet`.
+
+**Deviative — PostgreSQL**  
+Different data model: JOINs between vessel pairs, encounters, and movement 
+states. Relational storage was justified. This is the one project that 
+needed PostgreSQL.
+
+**Shared principle:** choose the simplest tool that fits the problem.
 
 ---
 
 ## Tech Stack
 
-**Languages & Core:** Python · Pandas · NumPy · Scikit-learn
-**ML:** LightGBM · XGBoost · TensorFlow/Keras (LSTM)
-**Data:** PostgreSQL · SQLAlchemy · Parquet
-**Visualization:** Streamlit · Plotly · PyDeck · Matplotlib
-**Testing:** pytest
-**Tools:** Git · GitHub Actions
+**Metrodorf:**  
+Python · Pandas · NumPy · Scikit-learn · LightGBM · XGBoost · 
+Streamlit · Plotly · Matplotlib · Parquet · Git
+
+**Deviative:**  
+Python · Pandas · NumPy · SciPy · Scikit-learn · Streamlit · PyDeck · 
+PostgreSQL · SQLAlchemy · pytest · Git
+
+**Energium (in development):**  
+Python · Pandas · Requests · Parquet · TensorFlow/Keras (planned)
 
 **Currently learning:** FastAPI · Docker.
 
