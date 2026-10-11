@@ -78,7 +78,8 @@ Testing whether ML can improve Energinet's official day-ahead wind forecast.
 - **Baseline:** ForecastDayAhead (Energinet's official forecast)
 - **Approach:** Residual learning — LSTM + physics-informed features
 - **Test set locked:** January 2026 · Forecast-origin locked
-- **Day 3 complete:** pipeline + curtailment filter implemented
+- **Pipeline complete:** curtailment filter implemented
+- **Status:** Day 3 of 12 — feature engineering next
 
 🔗 Repository: [energium](https://github.com/eliyahudahan/energium)
 
@@ -104,8 +105,7 @@ and movement states justified PostgreSQL.
 **Testing:** pytest
 **Tools:** Git · GitHub Actions
 
-**In learning:** FastAPI · Docker — required for Metrodorf production 
-(January 2026).
+**Currently learning:** FastAPI · Docker.
 
 ---
 
